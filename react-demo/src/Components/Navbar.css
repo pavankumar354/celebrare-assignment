@@ -9,18 +9,13 @@
 body {
 	background: #f2f2f2;
 }
+.nav1{
+	display: flex;
+	flex-direction: row;
+}
 .nav_section{
 	position: absolute;
-	width: 100vw;
-}
-.navitem {
-	background-color: transparent;
-	border: 0px;
-	font-size: 20px;
-	font-family: "Roboto";
-}
-.cour {
-	color: black;
+	width: 100%;
 }
 nav {
 	background: #ffffff;
@@ -102,8 +97,11 @@ nav .nav-items li a {
 .nav__list {
 	display: flex;
 	align-items: center;
+	justify-content: space-around;
 }
-
+.search{
+	margin: 1em;
+}
 .fa-magnifying-glass {
 	position: relative;
 	left: -18px;
@@ -122,11 +120,13 @@ nav .nav-items li a {
 	border: none;
     font-size: 15px;
 	cursor: pointer;
+	margin: 1em;
 }
 
 .nav__link {
 	color: #000;
 	text-decoration: none;
+	margin: 1em;
 }
 
 .nav__link2 {
@@ -137,4 +137,25 @@ nav .nav-items li a {
 .nav__list {
 	margin-right: 3%;
 	list-style: none;
+}
+
+@media (max-width:768px){
+	.nav_section{
+		flex-direction: row;
+		justify-content: center;
+	}
+	.logo {
+		width: 50%;
+		height: 50%;
+	}
+	.nav_sec{
+		display: flex;
+		flex-direction: column;
+	}
+	.nav__list{
+		width: 50%;
+	}
+	.nav-items{
+		height: 50%;
+	}
 }

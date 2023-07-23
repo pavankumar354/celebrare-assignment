@@ -89,18 +89,18 @@ function Pricingbody() {
                                 <p className="total_month">₹8 /mo</p>
                             </div>
                         </div>
-
-                        <div className={`month_card month_recommended ${select[12] ? 'subscription2' : 'subscription'}`} onClick={() => {
+                        <div className="month_card">
+                        <div className={` month_recommended ${select[12] ? 'subscription2' : 'subscription'}`} onClick={() => {
                             setSelect({
                                 12: true,
                                 6: false,
                                 3: false
                             })
-                            
+                            setTotal(0)
 
                             setValue(179);
-                            setDiscount(18321)
-                            setTotal( value)
+                            setDiscount(18500-value)
+                            setTotal(value)
                         }}>
                             <div className="month_radio_div">
                                 <p className='offer-recommended'><span className="ex-rc-text">Recommended</span></p>
@@ -117,11 +117,12 @@ function Pricingbody() {
 
                             <div className="pricing_div">
                                 <p className="total_price">Total <span className="black">₹179</span></p>
-                                <p className="total_month">₹15 /mo</p>
+                                <p className="total_month">₹8 /mo</p>
                             </div>
                         </div>
-
-                        <div className={`month_card ${select[6] ? 'subscription2' : 'subscription'}`} onClick={() => {
+                        </div>
+                        <div className="month_card">
+                        <div className={` ${select[6] ? 'subscription2' : 'subscription'}`} onClick={() => {
                             setSelect({
                                 12: false,
                                 6: true,
@@ -130,8 +131,9 @@ function Pricingbody() {
                             setTotal(0)
 
                             setValue(149);
-                            setDiscount(18351)
+                            setDiscount(18500-value)
                             setTotal(value)
+
 
                         }}>
                             <div className="month_radio_div months-input-part">
@@ -145,19 +147,20 @@ function Pricingbody() {
 
                             <div className="pricing_div">
                                 <p className="total_price">Total <span className="black">₹149</span></p>
-                                <p className="total_month">₹25 /mo</p>
+                                <p className="total_month">₹8 /mo</p>
                             </div>
                         </div>
-
-                        <div className={`month_card ${select[3] ? 'subscription2' : 'subscription'}`} onClick={() => {
+                        </div>
+                        <div className="month_card">
+                        <div  className={` ${select[3] ? 'subscription2' : 'subscription'}`} onClick={() => {
                             setSelect({
                                 12: false,
                                 6: false,
                                 3: true
                             })
-                            setTotal(0)
+                            setTotal(value)
                             setValue(99);
-                            setDiscount(18401)
+                            setDiscount(18500-value)
                             setTotal(value)
                         }}>
                             <div className="month_radio_div months-input-part">
@@ -171,10 +174,10 @@ function Pricingbody() {
 
                             <div className="pricing_div">
                                 <p className="total_price">Total <span className="black">₹99</span></p>
-                                <p className="total_month">₹33 /mo</p>
+                                <p className="total_month">₹8 /mo</p>
                             </div>
                         </div>
-
+                        </div>
                         <hr />
 
                         <div className="subscription_fee_div">
