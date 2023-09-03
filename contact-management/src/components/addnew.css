@@ -1,0 +1,13 @@
+.formt {
+    display:flex;
+    flex-direction: column;
+   
+    justify-content: center;
+    align-items:center;
+
+}
+.par{
+    display:flex;
+    justify-content: space-between;
+    margin:10px;
+}

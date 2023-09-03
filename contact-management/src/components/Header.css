@@ -1,0 +1,22 @@
+.head{
+    display: flex;
+    flex-direction:row;
+    justify-content: space-around;
+
+}
+.head1{
+    width: 100px;
+    height: 50px;
+    border-radius: 10px;
+    background-color: black;
+    font-size: 30px;
+    color: white;
+}
+.hea {
+    background-color: black;
+    color: white;
+}
+.heading{
+    text-align: center;
+    margin: 10px;
+}
